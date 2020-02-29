@@ -1,0 +1,68 @@
+.lessonsWrapper {
+  background-color: white;
+  height: 400px;
+  width: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #F7F8FC;
+  padding: 24px 0;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #5379F0;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'LotaGrotesqueAlt2-SemiBold', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contentTitle {
+  font-size: 14px;
+  width: 30%;
+  color: #212438;
+  font-family: 'LotaGrotesqueAlt2-Regular', serif;
+}
+.buttonWrapper {
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+    width: 130px;
+    font-size: 11px;
+    color: #212438;
+    font-family: 'LotaGrotesqueAlt2-Regular', serif;
+  }
+}
+.topButton {
+  display: flex;
+  align-items: center;
+  color: #212438;
+  font-family: 'LotaGrotesqueAlt2-Regular', serif;
+  justify-content: flex-end;
+  button {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 550px) {
+ .buttonWrapper {
+   width: auto;
+   flex-direction: column;
+   button {
+     margin-bottom: 5px;
+   }
+ }
+}

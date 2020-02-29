@@ -1,0 +1,51 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/fonts";
+.dashboardWidgetWrapper {
+  background-color: #fff;
+  height: 110px;
+  position: relative;
+  margin-bottom: 1px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &:first-child {
+    border-radius: 8px 8px 0 0;
+  }
+  &:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    .number {
+      color: $title-color;
+      font-family: 'LotaGrotesqueAlt2-SemiBold', serif;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    .text {
+      font-size: 14px;
+      margin-top: 3px;
+      font-family: 'LotaGrotesqueAlt2-Regular', serif;
+      color: #9d9da7;
+    }
+  }
+  i {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 875px) {
+  .dashboardWidgetWrapper {
+    width: 100%;
+    margin-right: 2px;
+    :last-child {
+      margin-right: 0;
+    }
+  }
+
+}

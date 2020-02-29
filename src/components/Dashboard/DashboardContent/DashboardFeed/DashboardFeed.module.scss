@@ -1,0 +1,81 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/fonts";
+
+.dashboardFeedWrapper {
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  background-color: #fff;
+  border-radius: 8px;
+  height: 150px;
+  position: relative;
+  &:first-child {
+    margin-top: 25px;
+  }
+
+  h3 {
+    color: $title-color;
+    font-family: 'LotaGrotesqueAlt2-SemiBold', serif;
+    font-size: 16px;
+  }
+
+  p {
+    color: #696d80;
+    font-family: 'LotaGrotesqueAlt2-Regular', serif;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+
+  i {
+    margin-right: 20px;
+  }
+
+  .content {
+    line-height: 1.5;
+  }
+
+  .updated {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+
+  .feedButton {
+    width: 150px;
+    border: 2px solid #5378f0;
+    color: #5378f0;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .feedButtonMessage {
+    width: 150px;
+    background-color: #5378f0;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  .updated {
+    color: #c4c4d5;
+  }
+  .messageDetails {
+    border-bottom: 2px solid  #D8D8D8;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .dashboardFeedWrapper {
+    margin-top: 10px;
+  }
+}

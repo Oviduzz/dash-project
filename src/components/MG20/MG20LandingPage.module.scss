@@ -1,0 +1,46 @@
+@import '../../styles/variables';
+.containerWrapper {
+  width: auto;
+  height: 670px;
+  background-color: #1C1C24;
+  display: flex;
+  justify-content: center;
+}
+.twoColumnsLanding {
+  margin: 0 auto;
+  width: 760px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  h1 {
+    font-family: LotaGrotesqueAlt2-Black, sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+  }
+  p {
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    font-size: 20px;
+    width: 350px;
+    margin: 20px 0;
+    line-height: 24px;
+  }
+  .buttonWrapper {
+    display: flex;
+    > div {
+      margin-right: 5px;
+    }
+  }
+}
+.bottomContent {
+  margin-top: 90px;
+  h2 {
+    font-family: LotaGrotesqueAlt2-Black, sans-serif;
+    font-size: 30px;
+  }
+  p{
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    font-size: 16px;
+    color: $text-grey;
+  }
+}

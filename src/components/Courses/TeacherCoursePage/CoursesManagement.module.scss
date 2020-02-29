@@ -1,0 +1,54 @@
+@import "../../../styles/fonts";
+@import "../../../styles/variables";
+.coursesWrapper {
+  width: 900px;
+  height: 450px;
+  margin: 30px auto 0;
+}
+.coursesMenu {
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 35px;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #F7F8FC;
+  ul {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    font-family: 'LotaGrotesqueAlt2-Regular', serif;
+    color: $grey-color;
+    li {
+      cursor: pointer;
+      padding: 20px 0;
+      &:hover {
+        color: #212438;
+      }
+    }
+    .active {
+      color: #212438;
+      border-bottom: 2px solid #7982EA;
+      padding: 20px 0;
+    }
+  }
+  i {
+    img {
+      width: 14px;
+    }
+  }
+  button {
+    border: 1px solid #DDDFE4;
+    border-radius: 4px;
+    padding: 0 12px;
+    display: flex;
+    font-size: 13px;
+    font-family: 'LotaGrotesqueAlt2-Regular', serif;
+  }
+}
+@media screen and (max-width: 905px) {
+  .coursesWrapper {
+    width: auto;
+  }
+}

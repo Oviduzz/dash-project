@@ -1,0 +1,24 @@
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  margin-bottom: 5px;
+}
+.badgeStyle {
+    width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    background: #eee;
+    display: inline-block;
+    vertical-align: middle;
+}
+.userActions {
+  width: 155px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

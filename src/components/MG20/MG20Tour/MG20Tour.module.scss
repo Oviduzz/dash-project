@@ -1,0 +1,237 @@
+@import '../../../styles/_variables.scss';
+
+.contentWrapper {
+  width: auto;
+  background-color: #1C1C24;
+  height: auto;
+
+}
+
+.topWrapper {
+  width: 940px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 100px;
+
+  h1 {
+    color: #ffffff;
+    font-size: 35px;
+    font-family: 'LotaGrotesqueAlt2-Black', sans-serif;
+    margin-bottom: 20px;
+  }
+}
+
+.cycleButtons {
+  display: flex;
+  width: 910px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  button {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.cycleWrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 975px;
+  width: auto;
+  margin: 65px auto 0;
+}
+
+.cycleBox {
+  margin-right: 33px;
+  width: 290px;
+
+  img {
+    background: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+
+.bottomBoxCycle {
+  height: 65px;
+  color: #1C1C24;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-top: 1px solid #DDDDDD;
+}
+
+.sectionWrapper {
+  display: flex;
+  margin: 70px auto 0;
+  width: 975px;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 18px;
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    margin-bottom: 10px;
+  }
+}
+
+.studentWrapper, .clubWrapper {
+  position: relative;
+}
+
+.entityBlock {
+  background: #fff;
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 96%;
+  border-radius: 8px;
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 16px;
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    margin-bottom: 10px;
+  }
+
+  > span {
+    font-size: 14px;
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    color: $text-grey;
+  }
+}
+
+.entityBadge {
+  margin-top: 7px;
+  span {
+    background: #E7E9FF;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    width: auto;
+    padding: 3px;
+    color: #7980EA;
+    margin-right: 5px;
+  }
+}
+.referenceWrapper {
+  display: flex;
+  margin: 95px auto 0;
+  width: 975px;
+  flex-direction: column;
+  h2 {
+    font-size: 18px;
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    margin-bottom: 10px;
+  }
+}
+.referenceBoxWrapper {
+  display: flex;
+  margin-top: 13px;
+}
+.referenceBox {
+  background: #fff;
+  width: 290px;
+  margin-right: 35px;
+  padding: 25px;
+  border: 8px;
+  display: flex;
+  flex-direction: column;
+  img {
+    margin: 27px;
+  }
+  h3 {
+    font-size: 18px;
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    margin-bottom: 3px;
+  }
+  p {
+    font-size: 14px;
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    color: $text-grey;
+    line-height: 18px;
+  }
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.aboutMg20 {
+  margin-top: 115px;
+  background-color: #fff;
+  > div {
+    width: 975px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 80px;
+    text-align: center;
+  }
+  h2 {
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    color: $text-grey;
+  }
+}
+.watchTour {
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  height: 110px;
+  width: 975px;
+  img {
+    margin: 20px;
+  }
+  h3 {
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    margin-bottom: 3px;
+    font-size: 18px;
+  }
+  p {
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    color: $text-grey;
+    font-size: 16px;
+  }
+}
+.studentPortal{
+  background-color: #1C1C24;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  bottom: -77px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  h3 {
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 3px;
+  }
+  p{
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    font-size: 14px;
+  }
+}

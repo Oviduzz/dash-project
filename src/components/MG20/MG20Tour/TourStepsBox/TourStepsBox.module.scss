@@ -1,0 +1,51 @@
+@import "../../../../styles/variables";
+.tourBoxWrapper {
+  width: 590px;
+  height: 138px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 27px;
+  left: 27px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    font-size: 16px;
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 14px;
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    color: $text-grey;
+  }
+  .steps {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+      font-size: 16px;
+      color: $button-color;
+    }
+  }
+}
+.fullButton {
+  cursor: pointer;
+  width: 150px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 17px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'LotaGrotesqueAlt2-SemiBold', serif;
+  color: #ffffff;
+  background-color: $button-color;
+}
+.progressBar {
+  width: 260px;
+}

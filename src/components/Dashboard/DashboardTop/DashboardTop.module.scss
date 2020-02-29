@@ -1,0 +1,36 @@
+@import "../../../styles/fonts";
+
+.dashboardTopWrapper {
+  width: 100%;
+  height: 145px;
+  background: #8D8EEB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #606EE8, #8D8EEB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #606EE8, #8D8EEB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 8px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .leftBlock {
+    display: flex;
+    color: white;
+    align-items: center;
+    i {
+      margin-right: 20px;
+    }
+  }
+  .content {
+    line-height: 1.5;
+    h3 {
+      color: #ffffff;
+      font-size: 16px;
+      font-family: 'LotaGrotesqueAlt2-SemiBold', serif;
+      letter-spacing: 1px;
+    }
+    span {
+      margin-right: 20px;
+      font-size: 16px;
+      font-family: 'LotaGrotesqueAlt2-Regular', serif;
+    }
+  }
+}

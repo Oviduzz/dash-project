@@ -1,0 +1,135 @@
+@import '../../../../styles/variables';
+.studentClub {
+  width: 975px;
+  margin: 115px auto 0;
+  h2 {
+    margin-bottom: 19px;
+    font-size: 18px;
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+  }
+}
+.studentWrapper {
+  background-color: white;
+  height: 400px;
+  width: auto;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+.contentWrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #F7F8FC;
+  align-items: center;
+  padding: 15px 0;
+  &:first-child {
+    padding-top: 0;
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.widgetWrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  > div {
+    margin-right: 60px;
+  }
+}
+.widgetContent {
+  margin-right: 60px;
+  display: flex;
+  flex-direction: column;
+  color: $title-color;
+  h3 {
+    font-size: 15px;
+    font-family: 'LotaGrotesqueAlt2-SemiBold', serif;
+  }
+  h4 {
+    font-size: 14px;
+    font-family: 'LotaGrotesqueAlt2-Regular', serif;
+  }
+}
+.nameWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  font-size: 14px;
+  font-family: 'LotaGrotesqueAlt2-Regular', serif;
+  :first-child {
+    color: $title-color;
+    margin-bottom: 3px;
+  }
+  :last-child {
+    color: $grey-color;
+  }
+}
+.notifyButtons {
+  display: flex;
+  button {
+    padding: 0 7px;
+    border-radius: 4px;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.buttonWrapper {
+  font-family: 'LotaGrotesqueAlt2-Regular', serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 1px solid  #F7F8FC;
+  padding: 15px 10px;
+  background-color: #fff;
+  button {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    line-height: 20px;
+    letter-spacing: 0.1375px;
+    color: #212438;
+    border: 1px solid #DDDFE4;
+    border-radius: 4px;
+  }
+  button:last-of-type {
+    margin-left: auto;
+    transform: scaleY(-1);
+  }
+}
+@media screen and (max-width: 730px) {
+  .widgetWrapper {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .widgetWrapper {
+    width: 40%;
+  }
+  .widgetContent {
+    width: 20%;
+    h3 {
+      font-size: 12px;
+    }
+    h4 {
+      font-size: 11px;
+    }
+  }
+  .nameWrapper {
+    width: 10%;
+    font-size: 11px;
+  }
+  .notifyButtons {
+    width: 5%;
+  }
+  .avatarWrapper {
+    width: 1px;
+  }
+}

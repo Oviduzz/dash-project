@@ -1,0 +1,131 @@
+@import "../../../styles/variables";
+@import "../../../styles/fonts";
+
+.bigContainer {
+  width: 75%;
+}
+
+.courseFeedWrapper {
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  height: 280px;
+  position: relative;
+
+  &:first-child {
+    margin-top: 25px;
+  }
+
+  .courseDetails {
+    display: flex;
+    width: 285px;
+    margin-top: 30px;
+    margin-bottom: 23px;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  h3 {
+    color: $title-color;
+    font-family: 'LotaGrotesqueAlt2-SemiBold', serif;
+    font-size: 16px;
+  }
+
+  p {
+    color: #696d80;
+    margin-top: 6px;
+    font-family: 'LotaGrotesqueAlt2-Regular', serif;
+    font-size: 16px;
+  }
+
+  .courseNumbers {
+    color: $title-color;
+    font-size: 20px;
+    font-family: 'LotaGrotesqueAlt2-SemiBold', serif;
+  }
+
+  .courseNumberTitles {
+    color: #9D9DA7;
+    font-size: 14px;
+    font-family: 'LotaGrotesqueAlt2-Regular', serif;
+  }
+
+  i {
+    margin-right: 20px;
+    height: calc(100% - 90px);
+
+    img {
+      width: 40px;
+    }
+  }
+
+  .content {
+    line-height: 20px;
+  }
+
+}
+
+.coursesWrapper {
+  width: 935px;
+  margin: 30px auto 0;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 875px) {
+  .bigContainer {
+    width: 100%;
+  }
+  .courseFeedWrapper {
+    margin-top: 6px;
+
+    &:first-child {
+      margin-top: 6px;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .courseNumbers {
+      font-size: 18px;
+    }
+
+    .courseNumberTitles {
+      font-size: 12px;
+    }
+  }
+
+  .coursesWrapper {
+    width: 100%;
+  }
+  .contentWrapper {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .courseFeedWrapper {
+    .courseDetails {
+      width: 190px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+}

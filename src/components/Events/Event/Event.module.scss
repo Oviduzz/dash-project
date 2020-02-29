@@ -1,0 +1,57 @@
+@import "../../../styles/variables";
+@import "../../../styles/fonts";
+
+.eventFeedWrapper {
+  padding: 35px;
+  display: flex;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  height: 194px;
+  &:first-child {
+    margin-top: 25px;
+  }
+
+  h3 {
+    color: $title-color;
+    font-family: 'LotaGrotesqueAlt2-Black', serif;
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    color: #696d80;
+    font-family: 'LotaGrotesqueAlt2-Regular', serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  i {
+    margin-right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 875px) {
+  .eventFeedWrapper {
+    margin-top: 16px;
+    height: auto;
+    &:first-child {
+      margin-top: 16px;
+    }
+    h3 {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    i {
+      margin-right: 15px;
+    }
+  }
+
+}

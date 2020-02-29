@@ -1,0 +1,9 @@
+.dashboardWrapper {
+  width: 935px;
+  margin: 30px auto 0;
+}
+@media screen and (max-width: 875px) {
+  .dashboardWrapper {
+    width: 100%;
+  }
+}

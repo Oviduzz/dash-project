@@ -11,7 +11,7 @@ const { TabPane } = Tabs;
 class WorkshopSection extends Component {
   constructor(props) {
     super(props);
-    console.log(props);
+
     this.state = {
       section: [{
         title: 'Session Snapshot',
@@ -35,7 +35,7 @@ class WorkshopSection extends Component {
   }
 
   callback = (key) => {
-    console.log(key);
+
   }
 
   render() {

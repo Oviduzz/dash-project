@@ -235,3 +235,56 @@
     font-size: 14px;
   }
 }
+
+@media screen and (max-width: 876px) {
+  .topWrapper {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .cycleButtons {
+    width: 100%;
+  }
+  .cycleWrapper {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 990px) {
+ .sectionWrapper {
+   display: flex;
+   margin: 35px auto 0;
+   width: 497px;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+ }
+  .referenceWrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+  .referenceBoxWrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .referenceBox {
+    width: 50%;
+    margin-right: 0;
+    padding: 25px;
+    border: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .aboutMg20{
+    > div {
+      width: 100%;
+    }
+
+  }
+}
+@media screen and (max-width: 550px) {
+  .referenceBox {
+    width: 100%;
+  }
+}

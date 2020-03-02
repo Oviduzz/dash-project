@@ -45,7 +45,7 @@ const courseContent = (
       </div>
       <div className={classes.secondMenuWrapper}>
         <Icon component={() => (<img alt='bell icon' src={course2}/>)}/>
-          <div>My Courses</div>
+        <div>My Courses</div>
       </div>
     </div>
   )
@@ -130,13 +130,25 @@ class Menu extends Component {
               </Link>
             </Popover>
           </li>
-          <li><span>Community</span></li>
-          <li><Link to='/mg20'
-                    getProps={({isCurrent}) => {
+          <li><Link to='/community'
+                    getProps={({isPartiallyCurrent}) => {
                       return {
                         style: {
-                          color: isCurrent ? "#212438" : "#9d9da7",
-                          borderBottom: isCurrent ? '2px solid #235de8' : 'none',
+                          color: isPartiallyCurrent ? "#212438" : "#9d9da7",
+                          borderBottom: isPartiallyCurrent ? '2px solid #235de8' : 'none',
+                          outline: 'none',
+                          padding: '20px 0'
+                        },
+                      };
+                    }}>
+            <span>Community</span>
+          </Link></li>
+          <li><Link to='/mg20'
+                    getProps={({isPartiallyCurrent}) => {
+                      return {
+                        style: {
+                          color: isPartiallyCurrent ? "#212438" : "#9d9da7",
+                          borderBottom: isPartiallyCurrent ? '2px solid #235de8' : 'none',
                           outline: 'none',
                           padding: '20px 0'
                         },

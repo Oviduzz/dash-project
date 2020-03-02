@@ -83,8 +83,6 @@ class StudentCoursesPage extends Component {
   }
 
   componentDidMount() {
-    console.log(this.state);
-    console.log(myCourseData);
     //here we will replace dummy data with API calls, and update the state according to models;
   }
 

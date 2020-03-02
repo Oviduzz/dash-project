@@ -10,6 +10,12 @@ import Mg20LandingPage from "../../MG20/Mg20LandingPage";
 import Mg20Tour from "../../MG20/MG20Tour/MG20Tour";
 import Workshop from "../../MG20/MG20Tour/Workshop/Workshop";
 import WorkshopSection from "../../MG20/MG20Tour/Workshop/WorkshopSection";
+import Community from "../../Community/Community";
+import JourneyRoad from "../../Community/CommunityPosts/JourneyRoad";
+import OtherPosts from "../../Community/CommunityPosts/OtherPosts";
+import CreateEditCommunity from "../../Community/CreateEditCommunity/CreateEditCommunity";
+import EditCommunity from "../../Community/CreateEditCommunity/EditCommunity";
+import DynamicCommunityComponent from "../../Community/CommunityPosts/DynamicCommunityComponent";
 
 const {Content, Footer} = Layout;
 
@@ -30,6 +36,13 @@ const CustomLayout = () => {
               <Mg20Tour path='/mg20Tour'/>
               <Workshop path='/mg20Tour/workshop'/>
               <WorkshopSection path='/mg20Tour/workshop-section'/>
+              <Community path='/community'>
+                <JourneyRoad path='/journey'/>
+                <OtherPosts path='/general'/>
+                <CreateEditCommunity path='/create-community'/>
+                <EditCommunity path='/edit-community'/>
+                <DynamicCommunityComponent path='/:route'/>
+              </Community>
             </Router>
           </Content>
 

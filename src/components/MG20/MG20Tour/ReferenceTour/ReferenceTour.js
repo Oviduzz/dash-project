@@ -8,7 +8,7 @@ import clubImage from '../../../../assets/Images/clubImage.svg';
 const ReferenceTour = ({referenceGuides, monthlyAwards, reference, isStudent}) => {
   const {studentOfTheMonth} = monthlyAwards;
   const {clubOfTheMonth} = monthlyAwards;
-  console.log(reference);
+
   return (
     <>
       <div className={classes.sectionWrapper} ref={reference}>

@@ -8,7 +8,7 @@ import {navigate} from "@reach/router";
 
 const Workshop = (props) => {
   const state = props.location.state[0];
-  console.log(props);
+
   return (
     <>
       <div className={classes.workshopWrapper}>

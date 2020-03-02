@@ -44,3 +44,8 @@
     color: $text-grey;
   }
 }
+@media screen and (max-width: 780px) {
+  .twoColumnsLanding {
+    flex-direction: column;
+  }
+}

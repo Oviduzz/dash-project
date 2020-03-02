@@ -103,6 +103,50 @@
     }
   }
 }
+
+.modalCommunity {
+  .ant-modal-content {
+    display: flex !important;
+    justify-content: center;
+    top: 20vh;
+  }
+  .ant-modal-header {
+    display: none;
+  }
+
+  .ant-modal-content {
+    border-radius: 8px;
+  }
+
+  .ant-modal-body {
+    max-width: 800px;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #F7F8FC;
+    h3 {
+      font-family: 'LotaGrotesqueAlt2-SemiBold', serif;
+      font-size: 25px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      height: 33px;
+      width: 200px;
+      border: 1px solid #F3F3F8;
+      box-sizing: border-box;
+      border-radius: 20px;
+      font-family: 'LotaGrotesqueAlt2-Regular', serif;
+    }
+  }
+}
+
 .ant-tabs-nav .ant-tabs-tab {
   font-family: 'LotaGrotesqueAlt2-Regular', serif;
   font-size: 16px;
@@ -114,7 +158,7 @@
 
 
 //select
-.selectContainer {
+.selectContainer, .sortByContainer, .selectTop {
   .ant-select-selection {
     border: none;
     background-color: #f7f8fc;
@@ -143,15 +187,39 @@
     transform: rotate(180deg);
   }
 }
+.selectTop.ant-select.ant-select-open.ant-select-focused.ant-select-enabled .anticon.ant-select-arrow-icon img {
+  transform: rotate(180deg);
+}
+.sortByContainer, .selectTop {
+  .ant-select-selection {
+    font-size: 13px;
+  }
+}
+.sortByContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .ant-select-selection {
+    background-color: #fff;
+  }
+  .ant-select-arrow {
+    color: red;
+  }
+  .ant-select-arrow .ant-select-arrow-icon img {
+    position: relative;
+    left: 5px;
+    bottom: 3px;
+  }
+}
 
 // upload
 .ant-upload.ant-upload-select-picture-card {
   border-radius: 50%;
   border: none;
 
-  img {
-    border-radius: 50%;
-  }
+  //img {
+  //  border-radius: 50%;
+  //}
 }
 
 @media screen and (max-width: 875px) {
@@ -191,5 +259,44 @@
 
       }
     }
+  }
+}
+// dropdown community
+.selectTop {
+  .ant-select-selection.ant-select-selection--single {
+    background-color: #CACDD7;
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    border-top-right-radius: 16px!important;
+    border-bottom-right-radius: 16px!important;
+    border: 1px;
+  }
+}
+.rightTop {
+  .ant-select-selection.ant-select-selection--single {
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    border: none;
+    position: relative;
+    top: 2px;
+  }
+}
+.form-community {
+  .ant-form-item {
+    margin-bottom: 20px;
+    .ant-form-item-label {
+      line-height: 1.5;
+    }
+  }
+  .ant-upload.ant-upload-select-picture-card {
+    background-color: #5276F8;
+  }
+  .ant-switch-checked {
+    background-color: #5276F8;
+  }
+}
+.rightTopModal {
+  .ant-select-selection.ant-select-selection--single {
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    border: none;
+    background-color: transparent;
   }
 }

@@ -1,0 +1,691 @@
+@import '../../styles/variables';
+//top bar with search and other options
+
+.topBarWrapper {
+  height: 60px;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1px;
+}
+
+.leftPart {
+  input {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-color: #CACDD7;
+  }
+}
+
+.selectTop {
+  width: 200px;
+}
+
+.rightPart {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  justify-content: space-between;
+
+  span {
+    font-size: 14px;
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    color: #212438;
+  }
+}
+
+// community posts
+.communityContainer {
+  h2 {
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    font-size: 16px;
+  }
+
+  p {
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    font-size: 14px;
+    color: #75778C;
+  }
+
+  .postRoutes {
+    color: #5276F8;
+    font-size: 12px;
+  }
+
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.postWrapper {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1px;
+  padding: 20px;
+
+  &:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+
+.contentWrapper {
+  margin-left: 23px;
+  width: 100%;
+}
+
+.postDetails {
+  margin-bottom: 20px;
+}
+
+.topPostDetailsWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.otherPostDetails {
+  display: inline-block;
+  margin-top: 10px;
+  width: 85%;
+  font-size: 14px;
+  font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+  color: $text-grey;
+}
+
+.numberOfVotes {
+  font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+  font-size: 12px;
+  color: #B5B9C4;
+}
+
+.bottomPostWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconWrapper, .iconWrapperOthers {
+  display: flex;
+  align-items: center;
+  width: 140px;
+  justify-content: space-between;
+  margin-top: 10px;
+
+  > div {
+    display: flex;
+    align-items: center;
+  }
+
+  .numberOfVotes {
+    margin-left: 5px;
+  }
+}
+
+.iconWrapperOthers {
+  width: 220px;
+}
+
+.postedBy {
+  color: #808298;
+  font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+  font-size: 13px;
+}
+
+// widget communities
+.widgetContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 17px;
+  margin-bottom: 12px;
+
+  h3 {
+    font-size: 14px;
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    padding: 0 0 15px 0;
+    border-bottom: 1px #f7f8fc solid;
+  }
+
+  .listCommunities {
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+    :nth-child(1) {
+      margin-top: 20px;
+    }
+
+    .linkToCommunity {
+      font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+      font-size: 14px;
+      margin-bottom: 3px;
+      position: relative;
+      left: 18px;
+    }
+
+    h5 {
+      margin-top: 5px;
+      font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+      font-size: 13px;
+      color: #B3B3BC;
+    }
+  }
+}
+
+.widgetWrapper {
+  width: 19%;
+}
+
+.journeyRoadContainer {
+  display: flex;
+  justify-content: space-between;
+
+  .journeyRoadWrapper {
+    width: 78%;
+  }
+
+  .joinCommunityWidget {
+    width: 21%;
+  }
+}
+
+.joinCommunityWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 8px;
+
+  > span {
+    font-size: 14px;
+    color: #696D80;
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    margin-bottom: 5px;
+  }
+
+  > div {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: flex-start;
+
+    span {
+      margin-left: 15px;
+      font-size: 12px;
+      font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+      color: #B5B9C4;
+    }
+  }
+
+  h3 {
+    font-size: 16px;
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+  }
+}
+
+.recentThreadsContainer {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-top: 12px;
+
+  h3 {
+    font-size: 14px;
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    color: #252841;
+    border-bottom: 1px solid #F7F8FC;
+    padding: 24px;
+  }
+
+  .widgetThreadDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    border-bottom: 1px solid #F7F8FC;
+
+    > span {
+      margin-left: auto;
+      margin-top: 10px;
+      font-size: 12px;
+      color: #BDC0CB;
+      font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    }
+
+    > div {
+      display: flex;
+      margin-top: 20px;
+      margin-bottom: 35px;
+      align-items: center;
+
+      > img {
+        width: 45px;
+        height: 45px;
+      }
+
+      > div {
+        margin-left: 14px;
+
+        h4 {
+          font-size: 16px;
+          font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+          color: #2F3157;
+        }
+
+        > div {
+          display: flex;
+          align-items: center;
+          margin-top: 5px;
+
+          span {
+            font-size: 12px;
+            color: #B5B9C4;
+            font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.communityPostWrapper {
+  cursor: pointer;
+  width: 80%;
+}
+
+//button
+.buttonViewMore {
+  cursor: pointer;
+  color: #5276F8;
+  border: 1px solid #5276F8;
+  font-size: 14px;
+  font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+  border-radius: 8px;
+  width: 100%;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.privateButton {
+  cursor: pointer;
+  margin-left: 10px;
+  width: 74px;
+  height: 24px;
+  border-radius: 15px;
+  font-size: 12px;
+  display: flex;
+  color: #D0021B;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF0F2;
+
+  span {
+    margin-left: 7px;
+  }
+}
+
+.requestButton, .joinButton, .joinButtonCommunity {
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: 'LotaGrotesqueAlt2-Regular', serif;
+  margin-left: auto;
+}
+
+.joinButton, .joinButtonCommunity {
+  background-color: $button-color;
+  color: #ffffff;
+}
+
+.joinButtonCommunity {
+  width: 75px;
+  margin-left: 0;
+}
+
+.requestButton {
+  border: 1px solid $button-color;
+  color: $button-color;
+
+  span {
+    margin-left: 5px;
+  }
+}
+
+.pencilButton {
+  cursor: pointer;
+  width: 48px;
+  height: 28px;
+  display: flex;
+  background-color: #5276F8;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16.5px;
+  margin-right: 25px;
+}
+
+// Create Edit communities
+.createCommunity {
+  background-color: #ffff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+
+  .uploadPicture {
+    span {
+      display: flex;
+      justify-content: center;
+    }
+
+    i {
+      margin-left: 0;
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+
+  form {
+    margin-top: 55px;
+    margin-bottom: 80px;
+    width: 520px;
+
+    label {
+      font-size: 16px;
+      font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+      color: #292C4B;
+    }
+
+    input[placeholder] {
+      font-size: 14px;
+      font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    }
+
+    textarea {
+      font-size: 14px;
+      font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+    }
+
+    .ant-form-item-label {
+      line-height: 1.5 !important;
+    }
+  }
+
+  .bottomForm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .buttonsForm {
+      display: flex;
+      flex-direction: row;
+
+      button {
+        margin-left: 5px;
+        cursor: pointer;
+        width: 85px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        font-size: 12px;
+        line-height: 18px;
+        font-family: 'LotaGrotesqueAlt2-Regular', serif;
+      }
+
+      button[type='submit'] {
+        background-color: #5276F8;
+      }
+
+      button[type='button'] {
+        border: 1px solid #5276F8;
+        color: #5276F8;
+      }
+    }
+
+  }
+
+}
+
+.modalContentWrapper {
+  padding: 60px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.modalImageContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 22px;
+  margin-bottom: 30px;
+
+  img {
+    width: 226px;
+    height: 226px;
+    border-radius: 50%;
+  }
+}
+
+.modalText {
+  font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+  font-size: 16px;
+  color: #252248;
+
+  p {
+    margin-bottom: 70px;
+  }
+}
+
+.modalDiscussion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.modalBarDiscussion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightPartTopModal {
+  span {
+    font-size: 14px;
+    font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+  }
+}
+
+.commentsWrapper {
+  display: flex;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin-top: 25px;
+  padding: 14px;
+
+  .commentsUserDetail {
+    width: 10%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div:first-child {
+      width: 31px;
+      height: 31px;
+      background-color: #8686FD;
+      font-size: 18px;
+      font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    div:last-child {
+      height: 90%;
+      background-color: #696D80;
+      width: 1px;
+      margin-top: 5px;
+    }
+  }
+
+  .commentsText {
+    width: 75%;
+
+    h3 {
+      font-size: 16px;
+      font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 12px;
+      font-family: LotaGrotesqueAlt2-Regular, sans-serif;
+      margin-bottom: 20px;
+    }
+
+    .iconWrapper {
+      width: 190px;
+
+      div {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .commentsPostedOn {
+    width: 10%;
+    color: #B5B9C4;
+    font-size: 12px;
+    font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    margin-left: auto;
+  }
+}
+
+.commentArea {
+  display: flex;
+  flex-direction: column;
+
+  .buttonsForm {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 17px;
+
+    button {
+      margin-left: 5px;
+      cursor: pointer;
+      width: 85px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      font-size: 12px;
+      line-height: 18px;
+      font-family: 'LotaGrotesqueAlt2-Regular', serif;
+    }
+
+    button[type='submit'] {
+      background-color: #5276F8;
+    }
+
+    button[type='button'] {
+      border: 1px solid #5276F8;
+      color: #5276F8;
+    }
+  }
+}
+
+// RWD media
+
+@media screen and (max-width: 1030px) {
+  .journeyRoadContainer {
+    .journeyRoadWrapper {
+      width: 60%;
+    }
+
+    .joinCommunityWidget {
+      width: 39%;
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .topBarWrapper {
+    height: 100px;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .communityContainer {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .widgetWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .widgetContainer {
+    width: 45%;
+  }
+  .communityPostWrapper {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 610px) {
+  .journeyRoadContainer {
+    flex-direction: column-reverse;
+    .journeyRoadWrapper {
+      width: 100%;
+    }
+
+    .joinCommunityWidget {
+      width: 100%;
+    }
+  }
+
+  .postedBy {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .topPostDetailsWrapper {
+    flex-direction: column;
+    align-items:  flex-start;
+  }
+  .privateButton {
+    margin-left: 0;
+  }
+  .postedBy {
+    display: none;
+  }
+  .widgetWrapper {
+    flex-direction: column;
+  }
+  .widgetContainer {
+    width: 100%;
+  }
+}

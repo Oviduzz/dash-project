@@ -1,4 +1,5 @@
 @import "../../../../styles/variables";
+
 .workshopWrapper {
   height: 335px;
   background-color: #1C1C24;
@@ -6,6 +7,7 @@
   color: #ffffff;
   padding: 18px 0;
   margin-bottom: 50px;
+
   .goB {
     font-size: 18px;
     font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
@@ -13,10 +15,12 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+
     img {
       margin-right: 10px;
     }
   }
+
   h2 {
     font-family: LotaGrotesqueAlt2-Black, sans-serif;
     font-size: 30px;
@@ -24,22 +28,27 @@
     margin-bottom: 10px;
   }
 }
+
 .bgc {
   width: 940px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
+
 .topContainer {
   display: flex;
   align-items: center;
 }
+
 .topDetailsWrapper {
   margin-left: 80px;
+
   p {
     margin-bottom: 10px;
   }
 }
+
 .buttonCyrcle {
   cursor: pointer;
   width: 190px;
@@ -54,6 +63,7 @@
   color: #ffffff;
   background-color: $button-color;
 }
+
 .workshopItemsWrapper {
   margin: 0 auto 10px;
   cursor: pointer;
@@ -64,6 +74,7 @@
   display: flex;
   border-radius: 8px;
   align-items: center;
+
   h3 {
     font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
     font-size: 16px;
@@ -72,49 +83,60 @@
   p {
     font-family: LotaGrotesqueAlt2-Regular, sans-serif;
   }
+
   .itemDetails {
     margin-left: 18px;
     width: 90%;
   }
+
   i {
     margin-left: auto;
     cursor: pointer
   }
+
   .imgWrapper {
     width: 8%;
   }
 }
+
 // Section
 .sectionTopContainer {
   background-color: #1C1C24;
   height: 210px;
+
   .sectionTopWrapper {
     width: 940px;
     color: #ffffff;
     margin: 0 auto;
   }
+
   .sectionTopContent {
     width: 93%;
     margin: 20px auto 0;
     display: flex;
     align-items: center;
+
     img {
       width: 85px;
       height: 85px;
     }
+
     h3 {
       font-family: LotaGrotesqueAlt2-Black, sans-serif;
       font-size: 30px;
       color: #ffffff;
     }
+
     p {
       font-family: LotaGrotesqueAlt2-Regular, sans-serif;
       font-size: 30px;
     }
+
     .sectionText {
       margin-left: 30px;
     }
   }
+
   .goB {
     font-size: 18px;
     font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
@@ -122,11 +144,13 @@
     align-items: center;
     cursor: pointer;
     padding-top: 18px;
+
     img {
       margin-right: 10px;
     }
   }
 }
+
 // section detailed
 .sectionDetailed {
   width: 940px;
@@ -137,11 +161,13 @@
   border-radius: 8px;
   padding: 40px;
 }
+
 .buttonWrapper {
   padding-top: 17px;
   display: flex;
   justify-content: flex-end;
-  button  {
+
+  button {
     font-size: 11px;
     display: flex;
     align-items: center;
@@ -152,18 +178,21 @@
     border: 1px solid #DDDFE4;
     border-radius: 4px
   }
+
   .buttonFull {
     color: #ffffff;
     border: none;
     background-color: #5379F0;
   }
 }
+
 .sectionDescription {
   h3 {
     font-family: LotaGrotesqueAlt2-Black, sans-serif;
     font-size: 30px;
     margin-bottom: 45px;
   }
+
   p {
     font-family: LotaGrotesqueAlt2-Regular, sans-serif;
     font-size: 18px;
@@ -171,30 +200,68 @@
     line-height: 25px;
   }
 }
+
 .moreDetails {
   margin-top: 41px;
+
   h2 {
     font-size: 20px;
     font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
   }
 }
+
 .textFragmentComponent {
   height: 100%;
   background-color: #F7F8FC;
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 15px;
+
   p {
     font-family: LotaGrotesqueAlt2-Regular, sans-serif;
     font-size: 16px;
     color: #696D80;
   }
 }
+
 .titleDetails {
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+
   h2 {
     margin-left: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .bgc {
+    width: 100%;
+  }
+  .workshopItemsWrapper {
+    width: auto;
+    .imgWrapper {
+      width: auto;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .sectionDetailed {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .workshopWrapper {
+    height: auto;
+  }
+}
+@media screen and (max-width: 625px) {
+  .workshopWrapper {
+    height: auto;
+  }
+  .topContainer {
+    flex-direction: column;
   }
 }

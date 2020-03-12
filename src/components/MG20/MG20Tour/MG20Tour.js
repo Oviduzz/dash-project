@@ -296,8 +296,8 @@ class Mg20Tour extends Component {
             {this.state.isStudent ? <h1>Browse Workshops</h1> : <h1>Find Your Cycle</h1>}
             <div className={classes.cycleButtons}>
               {
-                this.state.cycleData.map(cycle => (
-                  <ButtonAutoWidth text={cycle.name}/>
+                this.state.cycleData.map((cycle, idx) => (
+                  <ButtonAutoWidth text={cycle.name} key={idx}/>
                 ))
               }
 
@@ -312,13 +312,13 @@ class Mg20Tour extends Component {
           </div>
           <div className={classes.cycleWrapper}>
             {
-              !this.state.isStudent && this.state.contentData.map(content => (
-                <CycleComponent image={content.image} title={content.title} sendToWorkshop={this.sendToWorkshop}/>
+              !this.state.isStudent && this.state.contentData.map((content, idx) => (
+                <CycleComponent image={content.image} title={content.title} sendToWorkshop={this.sendToWorkshop} key={idx}/>
               ))
             }
             {
-              this.state.isStudent && this.state.studentData.map(content => (
-                <CycleComponent image={content.image} title={content.title} sendToWorkshop={this.sendToWorkshop}/>
+              this.state.isStudent && this.state.studentData.map((content, idx) => (
+                <CycleComponent image={content.image} title={content.title} sendToWorkshop={this.sendToWorkshop} key={idx}/>
               ))
             }
 

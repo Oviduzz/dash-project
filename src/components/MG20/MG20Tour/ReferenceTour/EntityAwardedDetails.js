@@ -6,8 +6,8 @@ const EntityAwardedDetails = ({name, academy, interests}) => {
       <h3>{name}</h3>
       <span>{academy}</span>
       <div className={classes.entityBadge}>
-        {interests.map(int => (
-          <span>{int}</span>
+        {interests.map((int, idx) => (
+          <span key={idx}>{int}</span>
         ))}
       </div>
     </div>

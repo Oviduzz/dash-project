@@ -79,8 +79,8 @@ class WorkshopSection extends Component {
                 </div>
 
                 <div className={classes.textFragmentWrapper}>
-                  {this.state.section[0].learn.map(item => (
-                    <TextFragments text={item.text}/>
+                  {this.state.section[0].learn.map((item, idx) => (
+                    <TextFragments key={idx} text={item.text}/>
                   ))}
                 </div>
               </div>
@@ -90,8 +90,8 @@ class WorkshopSection extends Component {
                   <h2>Reflect</h2>
                 </div>
                 <div className={classes.textFragmentWrapper}>
-                  {this.state.section[0].reflect.map(item => (
-                    <TextFragments text={item.text}/>
+                  {this.state.section[0].reflect.map((item, idx) => (
+                    <TextFragments text={item.text} key={idx}/>
                   ))}
                 </div>
 

@@ -40,8 +40,8 @@ class WidgetRecentThreads extends Component {
     return (
       <div className={classes.recentThreadsContainer}>
         <h3>Recent Threads</h3>
-        {this.state.recentThreads.map(thread => (
-          <div className={classes.widgetThreadDetails}>
+        {this.state.recentThreads.map((thread, idx) => (
+          <div className={classes.widgetThreadDetails} key={idx}>
             <span>{thread.time} days ago</span>
             <div>
               <img src={thread.image} alt=""/>

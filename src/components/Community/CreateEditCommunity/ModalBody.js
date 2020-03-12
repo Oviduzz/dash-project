@@ -88,8 +88,8 @@ class ModalBody extends Component {
               </div>
             </div>
           </div>
-          {comments.map(com => (
-            <div className={classes.commentsWrapper}>
+          {comments.map((com, idx) => (
+            <div className={classes.commentsWrapper} key={idx}>
 
               <div className={classes.commentsUserDetail}>
                 <div>B</div>

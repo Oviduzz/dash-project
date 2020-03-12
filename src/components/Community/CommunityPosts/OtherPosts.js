@@ -94,8 +94,8 @@ class OtherPosts extends Component {
 
   render() {
     return (
-      this.state.posts.map( post => (
-        <div className={classes.postWrapper}>
+      this.state.posts.map( (post, idx) => (
+        <div className={classes.postWrapper} key={idx}>
           <div className={classes.contentWrapper}>
             <div className={classes.postDetails}>
               <div className={classes.topPostDetailsWrapper}>

@@ -29,8 +29,8 @@ const Workshop = (props) => {
           </div>
         </div>
       </div>
-      {state.workshopItems.map(item => (
-        <WorkshopItems item={item} image={state.image}/>
+      {state.workshopItems.map((item, idx) => (
+        <WorkshopItems item={item} image={state.image} key={idx}/>
       ))}
     </>
   );

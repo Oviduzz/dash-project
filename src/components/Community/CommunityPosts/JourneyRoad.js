@@ -130,8 +130,8 @@ class JourneyRoad extends Component {
     return (
       <div className={classes.journeyRoadContainer}>
         <div className={classes.journeyRoadWrapper}>
-          {this.state.posts.map(post => (
-            <PostComponent {...post}/>
+          {this.state.posts.map((post, idx) => (
+            <PostComponent {...post} key={idx}/>
           ))}
         </div>
         <div className={classes.joinCommunityWidget}>

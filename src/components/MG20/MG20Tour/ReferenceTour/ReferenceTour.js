@@ -38,8 +38,8 @@ const ReferenceTour = ({referenceGuides, monthlyAwards, reference, isStudent}) =
       <div className={classes.referenceWrapper}>
         <h2>Reference Guides</h2>
         <div className={classes.referenceBoxWrapper}>
-          {referenceGuides.map(reference => (
-            <ReferenceGuides {...reference}/>
+          {referenceGuides.map((reference, idx) => (
+            <ReferenceGuides {...reference} key={idx}/>
           ))}
         </div>
       </div>

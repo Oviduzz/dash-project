@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import classes from "../Community.module.scss";
-import {Badge, Button, Form, Icon, Input, Select} from "antd";
+import {Badge, Button, Form, Icon, Input, Popover, Select} from "antd";
 import heartGreyIcon from "../../../assets/Images/heartGreyIcon.svg";
 import messageGreyIcon from "../../../assets/Images/messageGreyIcon.svg";
 import eyeGreyIcon from "../../../assets/Images/eyeGreyIcon.svg";
@@ -28,7 +28,21 @@ class ModalBody extends Component {
 
   render() {
     const {title, academyName, postDate, favorites, postImage, text, comments} = this.props;
-
+    const content = (
+      <div className={classes.contentPopover}>
+        <div className={classes.contentTop}>
+          <div>B</div>
+          <div>
+            <h3>Burak Can Ozen</h3>
+            <span>KPI 88</span>
+          </div>
+        </div>
+        <div className={classes.contentButtonWrapper}>
+          <Button>Add as Friend</Button>
+          <Button>Block User</Button>
+        </div>
+      </div>
+    );
     return (
       <>
         <div className={classes.modalContentWrapper}>
@@ -92,7 +106,10 @@ class ModalBody extends Component {
             <div className={classes.commentsWrapper} key={idx}>
 
               <div className={classes.commentsUserDetail}>
-                <div>B</div>
+                <Popover content={content} trigger="hover">
+                  <div>B</div>
+                </Popover>
+
                 <Icon component={() => (<img alt='bell icon' src={commentsIcon}/>)}/>
                 <div>
                 </div>

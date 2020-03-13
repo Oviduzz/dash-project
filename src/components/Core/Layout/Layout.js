@@ -16,6 +16,7 @@ import OtherPosts from "../../Community/CommunityPosts/OtherPosts";
 import CreateEditCommunity from "../../Community/CreateEditCommunity/CreateEditCommunity";
 import EditCommunity from "../../Community/CreateEditCommunity/EditCommunity";
 import DynamicCommunityComponent from "../../Community/CommunityPosts/DynamicCommunityComponent";
+import CommunityManagement from "../../Community/CommunityManagement/CommunityManagement";
 
 const {Content, Footer} = Layout;
 
@@ -42,6 +43,7 @@ const CustomLayout = () => {
                 <CreateEditCommunity path='/create-community'/>
                 <EditCommunity path='/edit-community'/>
                 <DynamicCommunityComponent path='/:route'/>
+                <CommunityManagement path='/manage-community/:route'/>
               </Community>
             </Router>
           </Content>

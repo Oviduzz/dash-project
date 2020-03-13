@@ -79,6 +79,7 @@
 }
 
 .postDetails {
+  cursor: pointer;
   margin-bottom: 20px;
 }
 
@@ -198,7 +199,15 @@
   padding: 24px;
   background: #ffffff;
   border-radius: 8px;
-
+  position: relative;
+  i {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    img {
+      width: 18px;
+    }
+  }
   > span {
     font-size: 14px;
     color: #696D80;
@@ -293,7 +302,6 @@
 }
 
 .communityPostWrapper {
-  cursor: pointer;
   width: 80%;
 }
 
@@ -329,8 +337,10 @@
     margin-left: 7px;
   }
 }
-
-.requestButton, .joinButton, .joinButtonCommunity {
+.joinButtonWrapper {
+  display: flex;
+}
+.requestButton, .joinButton, .joinButtonCommunity, .joinedButtonWrapper {
   cursor: pointer;
   width: 150px;
   height: 30px;
@@ -351,9 +361,14 @@
 
 .joinButtonCommunity {
   width: 75px;
-  margin-left: 0;
+  margin-left: 5px;
 }
-
+.joinedButtonWrapper {
+  width: 75px;
+  background-color: #fff;
+  color: $button-color;
+  border: 1px solid $button-color;
+}
 .requestButton {
   border: 1px solid $button-color;
   color: $button-color;
@@ -508,7 +523,62 @@
     font-family: LotaGrotesqueAlt2-Regular, sans-serif;
   }
 }
+.contentPopover {
+  padding: 10px;
+  width: 240px;
+  .contentTop {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    > div {
+      &:first-of-type {
+        width: 31px;
+        height: 31px;
+        background-color: #8686FD;
+        font-size: 18px;
+        font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        margin-right: 10px;
+      }
 
+    }
+    h3 {
+      font-size: 14px;
+      color: #212438;
+      font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+    }
+    span {
+      font-size: 13px;
+      font-family: LotaGrotesqueAlt2-SemiBold, sans-serif;
+      color: #BBBBC4;
+    }
+
+  }
+  .contentButtonWrapper {
+    display: flex;
+    flex-direction: column;
+    button {
+      border-radius: 12px;
+      height: 25px;
+      &:first-of-type {
+        color: #ffffff;
+        background-color: #5276F8;
+        border: none;
+        margin-bottom: 10px;
+      }
+      &:last-of-type {
+        color: #D9374B;
+        background-color: #ffffff;
+        border: 1px solid #D9374B;
+      }
+
+    }
+  }
+}
 .commentsWrapper {
   display: flex;
   width: 100%;
@@ -611,6 +681,47 @@
       color: #5276F8;
     }
   }
+}
+.modalCommunityDescription {
+  span {
+    font-family: 'LotaGrotesqueAlt2-Regular', serif;
+    font-size: 14px;
+    color: #B3B3BC;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-family: 'LotaGrotesqueAlt2-SemiBold', serif;
+    font-size: 16px;
+    color: #313358;
+  }
+}
+.modalButtonWrapper {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  button {
+    margin-left: 5px;
+    border-radius: 12px;
+    width: 85px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: 'LotaGrotesqueAlt2-Regular', serif;
+    &:first-of-type {
+      background-color: #fff;
+      border: 1px solid #5276F8;
+      color: #5276F8;
+    }
+    &:nth-of-type(2) {
+      border: none;
+      background-color: #5276F8;
+      color: #ffffff;
+    }
+  }
+
 }
 
 // RWD media

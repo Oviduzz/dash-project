@@ -146,7 +146,66 @@
     }
   }
 }
+.modalInvite {
+  .ant-modal-content {
+    display: flex !important;
+    justify-content: center;
+    top: 20vh;
+    width: 450px;
+  }
+  .ant-modal-header {
+    display: none;
+  }
 
+  .ant-modal-content {
+    border-radius: 8px;
+  }
+  .ant-modal-body {
+    padding: 50px;
+  }
+  h3 {
+    color: #383865;
+    font-size: 18px;
+    font-family: 'LotaGrotesqueAlt2-Regular', serif;
+    margin-bottom: 20px;
+  }
+}
+
+.modalRemoveUser {
+  .ant-modal-header {
+    display: none;
+  }
+
+  .ant-modal-content {
+    border-radius: 8px;
+  }
+  .ant-modal-body {
+    padding: 50px;
+  }
+  .ant-modal-content {
+    top: 20vh;
+    width: 570px;
+  }
+}
+.modalInviteFriend {
+  .ant-modal-header {
+    display: none;
+  }
+
+  .ant-modal-content {
+    border-radius: 8px;
+  }
+  .ant-modal-body {
+    padding: 50px;
+  }
+  .ant-modal-content {
+    top: 20vh;
+    width: 570px;
+  }
+  input[placeholder] {
+    border-radius: 14px;
+  }
+}
 .ant-tabs-nav .ant-tabs-tab {
   font-family: 'LotaGrotesqueAlt2-Regular', serif;
   font-size: 16px;
@@ -155,10 +214,28 @@
 .ant-tabs-nav .ant-tabs-tab-active {
   color: #21233A;
 }
+// tabs
+.tabsFromCommunityManagement {
+  div[role='tablist'] {
+    background-color: #ffffff;
+    margin-bottom: 0;
+  }
+}
+.banner-uploader {
+  display: flex;
+  justify-content: center;
+  .ant-upload.ant-upload-select-picture-card {
+    background-color: #5276f8;
+    width: 45px;
+    height: 45px;
 
-
+  }
+}
 //select
-.selectContainer, .sortByContainer, .selectTop {
+.managementSelect {
+  margin-left: 10px;
+}
+.selectContainer, .sortByContainer, .selectTop, .managementSelect {
   .ant-select-selection {
     border: none;
     background-color: #f7f8fc;
@@ -190,7 +267,19 @@
 .selectTop.ant-select.ant-select-open.ant-select-focused.ant-select-enabled .anticon.ant-select-arrow-icon img {
   transform: rotate(180deg);
 }
+.managementSelect {
+  .ant-select-selection {
+    background-color: transparent;
+  }}
+.managementSelect.ant-select.ant-select-open.ant-select-focused.ant-select-enabled .anticon.ant-select-arrow-icon img {
+  transform: rotate(180deg);
+}
 .sortByContainer, .selectTop {
+  .ant-select-selection {
+    font-size: 13px;
+  }
+}
+.managementSelect, .selectTop {
   .ant-select-selection {
     font-size: 13px;
   }
@@ -221,7 +310,15 @@
   //  border-radius: 50%;
   //}
 }
-
+.optionSelectFriend.ant-select-dropdown-menu-item:hover:not(.ant-select-dropdown-menu-item-disabled) {
+  background-color: #5276F8;
+  h3{
+    color: #ffffff;
+  }
+  span {
+    color: #ffffff;
+  }
+}
 @media screen and (max-width: 875px) {
   .ant-layout-content {
     margin: 0 5px;

@@ -186,6 +186,101 @@
   }
 }
 
+.longTextClass{
+  --primary-color: #06062e;
+  --title-color: #212438;
+  --button-color: #5379F0;
+  --grey-color: #9D9DA7;
+  --text-grey: #696D80;
+}
+
+.longTextClass {
+  font-family: 'LotaGrotesqueAlt2-Regular', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-grey);
+
+
+  strong {
+    font-size: 20px;
+    color: var(--primary-color);
+    display: block;
+
+  }
+
+  p strong {
+    padding-top: 20px;
+  }
+
+  li {
+    background: #F7F8FC;
+    padding: 1px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    list-style: none;
+  }
+
+  table {
+
+
+  }
+
+  td {
+    background: #F7F8FC;
+    margin: 2px;
+    padding: 5px;
+    border: 3px #fff solid;
+    border-radius: 8px;
+  }
+
+  td strong {
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  em {
+    font-style: normal;
+  }
+
+  h4 {
+    color: var(--primary-color)
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  ol {
+    padding: 0;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  table td {
+    background: #fff;
+    border: 2px solid #F7F8FC;
+    border-radius: 0px;
+    padding: 10px;
+  }
+
+  .soccerball {
+    width: 200px;
+    display: block;
+  }
+
+  a {
+    color: #5379F0;
+  }
+
+  hr {
+    border: 1px solid #F7F8FC;
+  }
+}
 .sectionDescription {
   h3 {
     font-family: LotaGrotesqueAlt2-Black, sans-serif;

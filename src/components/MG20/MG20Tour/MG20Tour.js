@@ -222,21 +222,25 @@ class Mg20Tour extends Component {
           ' Ut eget pretium turpis. Vestibulum ut enim et urna dictum hendrerit a vitae tortor.',
         workshopItems: [
           {
+            tip: 'week1',
             image: workshop1,
             title: 'Workshop',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in neque quis massa finibus mollis.',
           },
           {
+            tip: 'week2',
             image: workshop2,
             title: 'impACT Preparation',
             description: 'Integer nibh dolor, euismod placerat nunc non, molestie finibus enim.',
           },
           {
+            tip: 'week3',
             image: workshop3,
             title: 'impACT: Global Priorities Simulation',
             description: 'Sed sodales posuere urna sed tincidunt. Vivamus mattis augue non quam hendrerit maximus. Aliquam varius aliquam lectus, at scelerisque nibh hendrerit vel. ',
           },
           {
+            tip: 'week4',
             image: workshop4,
             title: 'Global Connections',
             description: 'Morbi ac sollicitudin augue.',

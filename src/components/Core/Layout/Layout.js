@@ -17,6 +17,10 @@ import CreateEditCommunity from "../../Community/CreateEditCommunity/CreateEditC
 import EditCommunity from "../../Community/CreateEditCommunity/EditCommunity";
 import DynamicCommunityComponent from "../../Community/CommunityPosts/DynamicCommunityComponent";
 import CommunityManagement from "../../Community/CommunityManagement/CommunityManagement";
+import FacilitatorWeek1 from "../../MG20/MG20Tour/Workshop/FacilitatorWeek1";
+import FacilitatorWeek2 from "../../MG20/MG20Tour/Workshop/FacilitatorWeek2";
+import FacilitatorWeek3 from "../../MG20/MG20Tour/Workshop/FacilitatorWeek3";
+import FacilitatorWeek4 from "../../MG20/MG20Tour/Workshop/FacilitatorWeek4";
 
 const {Content, Footer} = Layout;
 
@@ -37,6 +41,10 @@ const CustomLayout = () => {
               <Mg20Tour path='/mg20Tour'/>
               <Workshop path='/mg20Tour/workshop'/>
               <WorkshopSection path='/mg20Tour/workshop-section'/>
+              <FacilitatorWeek1 path='/mg20Tour/facilitator-week1'/>
+              <FacilitatorWeek2 path='/mg20Tour/facilitator-week2'/>
+              <FacilitatorWeek3 path='/mg20Tour/facilitator-week3'/>
+              <FacilitatorWeek4 path='/mg20Tour/facilitator-week4'/>
               <Community path='/community'>
                 <JourneyRoad path='/journey'/>
                 <OtherPosts path='/general'/>

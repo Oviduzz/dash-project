@@ -224,26 +224,30 @@ class Mg20Tour extends Component {
           {
             tip: 'week1',
             image: workshop1,
-            title: 'Workshop',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in neque quis massa finibus mollis.',
+            title: 'Week 1: Workshop',
+            description: 'Discover what mG20 in Action is all about during the first club meeting! Students will' +
+              'get to know one another and explore how mg20 in Action can help them develop and practice their leadership skills',
           },
           {
             tip: 'week2',
             image: workshop2,
-            title: 'impACT Preparation',
-            description: 'Integer nibh dolor, euismod placerat nunc non, molestie finibus enim.',
+            title: 'Week 2: impACT Preparation',
+            description: 'Smart Technologies for a Sustainable City What is a Smart City? Participate in a role-playing simulation and search' +
+              'for smart technologies to help citizens improve safety and sustainability in the fictional city of Seaview. ',
           },
           {
             tip: 'week3',
             image: workshop3,
-            title: 'impACT: Global Priorities Simulation',
-            description: 'Sed sodales posuere urna sed tincidunt. Vivamus mattis augue non quam hendrerit maximus. Aliquam varius aliquam lectus, at scelerisque nibh hendrerit vel. ',
+            title: 'Week 3: impACT: Global Priorities Simulation',
+            description: 'Students deliver persuasive proposals to a group called the Deciding Committee. The simulation features three rounds: the opening ' +
+              'statement, the proposals, and the closing statement.',
           },
           {
             tip: 'week4',
             image: workshop4,
-            title: 'Global Connections',
-            description: 'Morbi ac sollicitudin augue.',
+            title: 'Week 4: Global Connections',
+            description: 'An opportunity for students to practice effective communication, respecting different points of view, and supporting opinions' +
+              "with facts while discussing today's pressing issues with peers in their club and around the world",
           },
         ]
       }]

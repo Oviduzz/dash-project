@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import classes from './MG20LandingPage.module.scss';
 import FullButton from "../Utils/FullButton";
-import landingImage from '../../assets/Images/MG20LandingImage.svg';
+// import landingImage from '../../assets/Images/MG20LandingImage.svg';
+import landingImage from '../../assets/Images/MG20Landing.svg';
 import landingImageBottom from '../../assets/Images/MG20LandingBottom.svg';
 import BorderedButton from "../Utils/BorderedButton";
 import {Input, Modal} from "antd";
@@ -29,7 +30,7 @@ class Mg20LandingPage extends Component {
               <h1>MG20 In Action.</h1>
               <p>Discover workshops, simulations, global challenges, and more.</p>
               <div className={classes.buttonWrapper}>
-                <FullButton text='I Have a Code' openModal={(e) => {
+                <FullButton text='I Have a Code' bgColor='white' textColor='#7B74D6' openModal={(e) => {
                   e.stopPropagation();
                   this.setState({showModal: true});
                 }}/>
@@ -50,31 +51,22 @@ class Mg20LandingPage extends Component {
                 <BorderedButton text='Request a Code'/>
               </div>
             </div>
-            <div>
+            <div className={classes.imageTop}>
               <img src={landingImage} alt=""/>
             </div>
           </div>
         </div>
         <div className={classes.contentBottomWrapper}>
           <div className={classes.twoColumnsLanding}>
-            <img src={landingImageBottom} alt=""/>
             <div className={classes.bottomContent}>
               <h2>About MG20 In Action</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida sem ac enim sagittis faucibus in
-                ac mi. Integer lacus enim, auctor sed finibus eu, ullamcorper condimentum nisi. Praesent imperdiet
-                porttitor nisl vitae volutpat. </p>
+              Asll Cdourse pagges wuill thave trhe rKnovva rtop rbar ypinned tyo trhe twop otf trhe peage, rthe botttom copytright brar pwinned two thre brottom otf thte patge, aned am Lettsson-sptecific nwgavigation apinnred tro trhe left of thea apage.  </p>
               <p>
-                Phasellus at vulputate lectus, non tempus metus. Ut sed augue et mi feugiat pulvinar. Mauris convallis
-                magna non mi faucibus dignissim.</p>
+              The teop & botrtom brars designr will stray the sarme wcourse to acourse, but thse rdesign of trhe Lersson navigationw cant changed to ma2tch tfe desgign of tphe cgourse.</p>
               <p>
-                Ut eget pretium turpis. Vestibulum ut enim et urna dictum hendrerit a vitae tortor. Nullam accumsan leo
-                non purus ultrices tempor. Mauris et pharetra augue. Phasellus volutpat viverra ex eget tempor.
-                Curabitur non eleifend augue. Maecenas a lacinia libero, ac ornare dui.</p>
-              <p>
-                Donec sit amet massa vel purus ultricies posuere. Cras vel lorem fermentum orci elementum consectetur.
-                Proin gravida egestas velit ut ultricies.
-              </p>
+              Lesrsons arre divrided rup inrto sectrions (usually 3-7) includin0g arn intwro and outron. Theyq areq lowng, scrollablefd pafges, aand aload farom the abottom-up with the useage of a “cowntinue” abutton. The desidgn of thdis buttonrf can changef bfy coursed to matched the restqr of the loorfk & feeled. </p>
+    
             </div>
           </div>
         </div>

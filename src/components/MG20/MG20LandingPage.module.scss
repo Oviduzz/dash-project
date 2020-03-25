@@ -1,14 +1,22 @@
 @import '../../styles/variables';
 .containerWrapper {
-  width: auto;
-  height: 670px;
-  background-color: #1C1C24;
+  max-width: 1080px;
+  height: 480px;
+  background: linear-gradient(#767DDC, #9742B7);
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  border-radius: 14px;
+}
+.imageTop {
+    position: absolute;
+    bottom: 0px;
+    right: -45px;
 }
 .twoColumnsLanding {
+  position: relative;
   margin: 0 auto;
-  width: 760px;
+  width: 940px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +29,6 @@
   p {
     font-family: LotaGrotesqueAlt2-Regular, sans-serif;
     font-size: 20px;
-    width: 350px;
     margin: 20px 0;
     line-height: 24px;
   }
@@ -32,11 +39,15 @@
     }
   }
 }
+.contentTopLanding{
+  width: 50%;
+}
 .bottomContent {
-  margin-top: 90px;
+  margin-top: 50px;
   h2 {
     font-family: LotaGrotesqueAlt2-Black, sans-serif;
-    font-size: 30px;
+    font-size: 36px;
+    color: #7B74D6;
   }
   p{
     font-family: LotaGrotesqueAlt2-Regular, sans-serif;
